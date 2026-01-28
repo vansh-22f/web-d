@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strict"  
+<!-- // treat all js code as newer version. //do not need it explicitly -->
+<!-- 
+// number
+// bigInt
+// null --representation of empty value/ standlone value
+// string
+// boolean
+
+// undefined---no value assigned till now
+//symbol---unique value -->
+
+ //object -->
+console.log(typeof 123) //number
+console.log(typeof 123n) //bigInt
+console.log(typeof null) //object (bug//khaami)
+console.log(typeof "hello") //string
+console.log(typeof true) //boolean
+console.log(typeof undefined) //undefined
+
+console.log("data type conversions")
+
+
+let name="vansh"
+console.log(typeof name) //string
+let firstname=Number(name) //type conversion
+console.log( firstname) //NaN
+//so when a string is converted into a number then if it is not a valid number it becomes NaN
+console.log(typeof firstname) //number 
+
+
+
+let var1=1;
+let var2=Boolean(var1);
+console.log(var2) //true and type is Boolean
+
+let var3=0;
+let var4=Boolean(var3);
+console.log(var4) //false and type is Boolean
+    </script>
+</body>
+</html>

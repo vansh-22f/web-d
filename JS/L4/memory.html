@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //primitive data types in js uses stack memory ....we get copy
+        //reference data types in js uses heap memory  .... we get refernce
+        let name="vansh";
+        let name2=name; //copy of value is stored in name2
+        name2="mohan";
+        console.log(name); //vansh
+        console.log(name2); //mohan
+    </script>
+</body>
+</html>

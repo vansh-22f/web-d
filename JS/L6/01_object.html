@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let user={
+            name:"vansh",
+            age:23,
+            city:"Delhi",
+            is_admin:"false",
+            "full name":"vansh mittal"      //multi word property but the key neeed to be in double quotes like "full name"
+            
+        };
+        //for in loop
+        for(let key in user){
+            console.log(key);
+            console.log(user[key]);
+        }
+        alert("name" in user);  //true
+
+        
+        let key=prompt("what is your name","name");
+        alert(user[key]);   //if "name" is chosen then it will give vansh else will give undefined
+
+
+        console.log(user);    //{name: 'vansh', age: 23, city: 'Delhi', is_admin: 'false', full name: 'vansh mittal'}
+        console.log("Deleting is_admin");       //to delete a property
+        delete user.is_admin;
+        console.log(user);  //{name: 'vansh', age: 23, city: 'Delhi', full name: 'vansh mittal'}
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function addition(a, b) {
+        return a + b;
+      }
+      let result = addition(4, 5);
+      console.log(result);
+
+      function showmessage() {
+        let variable = "vansh";
+        console.log(variable); //local variables
+      }
+      showmessage();
+      //console.log(variable);
+
+      let variable_1 = "hi";
+      function showmessage_1() {
+        let result = "hello " + variable_1;
+        console.log(result);
+      }
+      showmessage_1();
+      console.log(variable_1);
+
+
+
+      // Function Declaration: a function, declared as a separate statement, in the main code flow:
+      // Function Declaration
+      function sum(a, b) {
+        return a + b;
+      }
+      //Function Expression: a function, created inside an expression or inside another syntax construct. Here, the function is created on the right side of the “assignment expression” =:
+
+      // Function Expression
+      let sum = function (a, b) {
+        return a + b;
+      };
+    </script>
+  </body>
+</html>

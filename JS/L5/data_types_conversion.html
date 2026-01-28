@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("Number to String")
+        let varible_2=2;
+        let variable_3=String(varible_2)
+        console.log(typeof variable_3)
+        console.log(variable_3)
+
+        console.log("String to Number")
+        let name="vansh";
+        let variable_1=Number(name);
+        //so if string is converted into a number and 
+        //is not a valid format then it gives NaN when printed
+        
+        //Value:::undefined	   Becomes:::NaN
+        console.log(variable_1);    //NaN
+        console.log(typeof variable_1);  //Number
+
+
+        let var_1="6"
+        let var_2="2"
+        console.log(var_1/var_2)
+        console.log( "6" / "2" ); // 3, strings are converted to numbers
+    
+        console.log("Boolean to Number")
+        console.log( Number(true) );///1
+        console.log(Number(false)); ////0
+        console.log(Number("true")) //it is string only so converting it into number will give NaN
+        
+        
+        console.log("Number to Boolean")
+        console.log(Boolean(1)) //true
+        console.log(Boolean(0)); //false as 0 , null , undefined and NaN gives false
+
+        console.log("String to Boolean")
+        console.log(Boolean("hello")) //true (any non empty is true)
+        console.log(Boolean(""))   //false  because it is empty
+        //any empty string will always give false when converted to boolean
+        console.log(Boolean("0")) //true  as it is string and not empty
+    </script>
+</body>
+</html>

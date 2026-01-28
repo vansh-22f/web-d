@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // passing functions as values
+        function result(question, yes , no){
+            if(confirm(question)) yes();
+            else no();
+        }
+        function reply1(){
+            alert("You are coming today!");
+        }
+        function reply2(){
+            alert("You are not coming today!");
+        }
+        result("Are you coming today?",reply1,reply2);
+
+
+    </script>
+</body>
+</html>
