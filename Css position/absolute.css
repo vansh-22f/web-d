@@ -1,0 +1,15 @@
+.parent{
+    width:500px;
+    padding:30px;
+    background-color: rgb(29, 29, 29);
+    color:rgb(191, 190, 190);
+    position: relative;
+}
+.child{
+    padding:20px;
+    background-color: rgb(65, 2, 128);
+    color:rgb(167, 167, 168);
+    position: absolute;
+    top:0px;
+    right:0px;
+}

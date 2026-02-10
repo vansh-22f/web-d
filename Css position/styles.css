@@ -1,0 +1,34 @@
+/* Relative */
+/* .box{
+    height:300px;
+    width: 300px;
+    padding: 20px;
+    background-color: lightcoral;
+    position:relative;
+    top:30px;
+    left:30px;
+
+} */
+
+ /* Fixed */
+/* .box{
+    height:200px;
+    width: 200px;
+    padding: 20px;
+    background-color: lightcoral;
+    position:fixed;
+    top:30px;
+    right:0px;
+
+
+} */
+
+ /* Sticky */
+.box{
+    height:200px;
+    width: 200px;
+    padding: 20px;
+    background-color: lightcoral;
+    position:sticky;
+    top:0;
+}
