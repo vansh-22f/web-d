@@ -41,8 +41,11 @@ console.log(count.next().value); // 0
 console.log(count.next().value);//1
 console.log(count.next().value);//2    // goes on indefinitely until we stop it
 
+
+// ***
 // console.log(count.throw(new Error("Something went wrong!")));
 // This will throw an error inside the generator, which can be caught and handled if needed.
+
 
 console.log(count.next().value); // 3 (generator continues after the error if not handled)
 
