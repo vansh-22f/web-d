@@ -1,11 +1,12 @@
-// A Promise represents a value that will be available later.
+// A Promise represents a value that will be available later. 
+// Eventual completion of an asynchronous operation.
 // Promises -> resolve or rejected
 
 //works with aync await
 
 //fetch() we have  url in this to get response from 
 
-// promises use microtask queue ie after call stack and before setTimeout
+// promises use microtask queue ie after call stack and before setTimeout or events(macrotask queue)
 
 
 

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <div class="circle">eded</div>
+        <div class="circle">edw</div>
+        <div class="circle">dewde</div>
+    </div>
+    <div class="box">
+        <div class="square">edwd</div>
+    </div>
+</body>
+<script>
+    const ans=document.getElementsByClassName("box")    //old way
+    console.log(ans)
+    const result=document.querySelector(".box") //new way 
+    //querySelector → single element
+
+    //querySelectorAll → NodeList
+    console.log(result)
+    const obj=document.querySelectorAll(".box")
+    console.log(obj)
+</script>
+</html>

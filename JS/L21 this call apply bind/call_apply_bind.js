@@ -27,7 +27,7 @@ let printDetails3= function (state,country) {
     console.log(this.name+" "+state+" "+country);
   }
   //can also take many parameters
-printDetails3.call(userdetails3,"Delhi","India");
+printDetails3.call(userdetails3,"lucknow","India");
 
 let userdetails4={
     name:"mouse",
