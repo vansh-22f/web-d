@@ -56,3 +56,30 @@ type ID = string | number          // union
 type Status = "idle" | "loading"   // literal union
 type Point = [number, number]      // tuple
 type Nullable<T> = T | null        // generic alias
+
+
+
+// ? optional properties
+type User1={
+  username: string,
+  bio?: string  // bio is optional can be omitted when creating a User1 object
+}
+
+const user1:User1={
+  username:"Vansh",
+  bio:"Student at XYZ University" //optional
+}
+
+
+
+//readonly
+type Config1={
+  readonly appName:string,
+  version:number
+}
+
+const c1:Config1={
+  appName:"MyApp",
+  version:1.0
+}
+// c1.appName="NewApp" // Error: Cannot assign to 'appName' because it is a read-only property.
