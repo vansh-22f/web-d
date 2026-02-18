@@ -19,12 +19,12 @@ function User(name) {
 const u = new User("Vansh");
 
 
-//this does npt work with arrow functions 
+//this does npt work with arrow functions  because it points to global object
 
 const obj1 = {
   name: "JS",
   arrow: () => {
-    console.log(this.name);
+    console.log(this.name);    //because it points to global object
   },
   normal() {
     console.log(this.name);
