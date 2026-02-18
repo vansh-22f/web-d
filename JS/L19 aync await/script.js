@@ -4,6 +4,7 @@
     // async/await = syntax sugar
     // Makes async code look synchronous
 
+    //await also goes on in microtask queue
 
 
 async function foo(){
