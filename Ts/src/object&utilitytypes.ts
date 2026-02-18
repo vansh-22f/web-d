@@ -35,9 +35,9 @@ let bigCup:Cup={size:"big", material:"plastic"} //extra property is allowed in d
 smallCup=bigCup
 //bigCup can be assigned to smallCup because it has all the properties of smallCup (size) and extra properties are allowed in duck typing
 
-//smallCup has only size property, bigCup has size and material properties, 
-// but smallCup can be assigned to bigCup because 
-// it has all the properties of bigCup (size) and extra properties are allowed in duck typing
+//bigCup has size and material properties, smallCup requires only size property
+// bigCup can be assigned to smallCup because 
+// it has all the properties of smallCup (size) and extra properties are allowed in duck typing
 
 
 
@@ -49,7 +49,9 @@ type Chai={
     isHot:boolean
 }
 // Make all properties in T optional where T is <Chai>
-const updateChai=(updates: Partial<Chai>)=>{  // OR const updateChai=Partial<Chai>=>{}
+const updateChai=(updates: Partial<Chai>)=>{  
+    // OR const updateChai=Partial<Chai>=>{}
+    
     //updates can have any subset of properties of Chai
     //for example, updates can be {flavor:"masala"} or {price:20} or {isHot:true} or {flavor:"ginger", price:15}
     
@@ -94,6 +96,13 @@ user.age = 30; // ❌ Error
 
 
 
+
+// type User1={
+//     name:string,
+//     age:number,
+//     email:string
+// }
+
 // 4.
 //Pick<>
 Pick<T, K>
@@ -107,7 +116,13 @@ const preview: UserPreview = {
 };
 // Used when sending limited data in API responses.
 
-
+//difference between pick and partial***
+// Eg2
+type User3 = { id: number; name: string; email: string };
+type A = Pick<User3, "name" | "email">;
+// { name: string; email: string }
+type B = Partial<User3>;
+// { id?: number; name?: string; email?: string }
 
 
 
@@ -124,6 +139,8 @@ const user2: UserWithoutEmail = {
 };
 
 
+
+
 // 6.
 Record<K, T>
 
@@ -136,6 +153,15 @@ const rolePermissions: Record<Roles, string[]> = {
   user: ["read"]
 };
 
+//eg2
+type Role5 = "admin" | "user" | "guest";
+
+type Access = Record<Role5, boolean>;
+// {
+//   admin: boolean;
+//   user: boolean;
+//   guest: boolean;
+// }
 
 
 
@@ -148,6 +174,9 @@ type Role="admin" | "user" | "guest"
 type WithoutGuest = Exclude<Role, "guest">;
 // WithoutGuest can be "admin" or "user",
 // but not "guest" because we have excluded "guest" from the Role type using Exclude utility type.
+
+
+
 
 
 // 8.
