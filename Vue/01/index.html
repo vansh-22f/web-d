@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+</head>
+<body>
+    <h1>Hello Vue.js</h1>
+    <div id="app">
+<!--         
+        <p>{{title}} -- {{count}}</p>
+        <!- directives like v-on is a directive here ->
+        <button v-on:click="count++">Increase count</button>
+        <button v-on:click="count--">Decrease count</button>
+        <div v-on:click=""></div>
+        <!- same as v-on:click === @click ->
+        <div @click="changeTitle('XYZ ABC')">Change Book title</div>  -->
+
+        <!-- v-if -->
+         <div v-if="showBooks">
+            <p>{{title}}</p>
+        </div>
+
+        <button @click="toggleBooks">
+            <span v-if="showBooks">
+                Hide books
+            </span>
+            <span v-if="!showBooks"> 
+                Show books
+            </span>
+            <!-- can also do like 
+            <span v-else>
+                Show Books
+            </span>
+             -->
+        </button>
+        
+        <!-- diff 
+         when we use v-if  and is false takes it out of dom completely and use when wont chnge very often 
+         v-show uses css when true to display and hides when not true -->
+        <!-- v-show directives -->
+        <div v-show="showBooks">Currently showing books</div>
+
+    </div>
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
