@@ -27,7 +27,7 @@ console.log(text.toLowerCase()); //javascript
 
 let str = "FrontendDeveloper";
 console.log(str.slice(0, 8));       // Frontend
-console.log(str.substring(8, 17));  // Developer
+console.log(str.substring(9, 17));  // Developer
 
 
 let msg = "I love Java";
