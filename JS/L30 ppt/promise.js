@@ -18,6 +18,7 @@ myPromise
     console.log(error);
   });
 
+//promise chaining
 fetchData()
   .then(data => processData(data))
   .then(result => console.log(result))
