@@ -13,3 +13,10 @@ form.addEventListener("submit", e => {
 
 Typescript
 1. utility types like record , partial, required, pick, omit etc
+
+v:bind is used to dynamically bind an attribute to an expresiion
+shorthand for v-bind is : so instead of writing v-bind:href we can write :href
+
+
+v:on is used to listen to events and execute some code when that event is triggered
+shorthand for v-on is @ so instead of writing v-on:click we can write @
