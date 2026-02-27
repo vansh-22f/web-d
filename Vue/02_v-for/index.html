@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <!-- v-bind:href -->
+        <a :href="url">Website</a><br>
+        <div v-if="showBooks">
+            <ul>
+                <!-- v-for= -->
+                <li v-for="book in books">
+                    <img :src="book.img" :alt="book.title">
+                    <h3>{{book.title}}</h3>
+                    <h3>{{book.author}}</h3>
+                </li>
+            </ul>
+        </div>
+
+
+        <button @click="toggleShowBooks">
+            <span v-if="showBooks">Hide Books</span>
+            <span v-else>Show Books</span>
+        </button>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

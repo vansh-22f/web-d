@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <style>
+        .box{
+            padding:100px 0;
+            width:400px;
+            text-align: center;
+            margin:20px;
+            display: inline-block;
+            background: rgb(187, 186, 186);
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Hello Vue.js</h1>
+    <div id="app">
+        <!--         
+        <p>{{title}} -- {{count}}</p>
+        <!- directives like v-on is a directive here ->
+        <button v-on:click="count++">Increase count</button>
+        <button v-on:click="count--">Decrease count</button>
+        <div v-on:click=""></div>
+        <!- same as v-on:click === @click ->
+        <div @click="changeTitle('XYZ ABC')">Change Book title</div>  -->
+
+        <!-- v-if -->
+        <div v-if="showBooks">
+            <p>{{title}}</p>
+        </div>
+
+        <button @click="toggleBooks">
+            <span v-if="showBooks">
+                Hide books
+            </span>
+            <span v-if="!showBooks">
+                Show books
+            </span>
+            <!-- can also do like 
+            <span v-else>
+                Show Books
+            </span>
+             -->
+        </button>
+        <br>
+        <!-- mouse events -->
+        <div class="box" @mouseover="handleEvent($event , 5)">Mouseover enter</div>
+        <div class="box" @mouseleave="handleEvent(7)">Mouseleave</div>
+        <div class="box" @dblclick="handleEvent">double click</div>
+        <div class="box" @mousemove="handlemousemove">position -{{x}}- {{y}}</div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
