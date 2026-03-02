@@ -10,34 +10,33 @@
 // Bubbling (target â†’ top)
 
 // Event Bubbling (Default)
-document.getElementById("child").addEventListener("click", () => {
+document.getElementById("child")
+.addEventListener("click", () => {
   console.log("Child clicked");
 });
 
-document.getElementById("parent").addEventListener("click", () => {
+document.getElementById("parent")
+.addEventListener("click", () => {
   console.log("Parent clicked");
 });
 
-// ðŸ‘‰ Clicking child logs:
-
-// Child clicked
-// Parent clicked
-// Event Capturing
 parent.addEventListener("click", () => {
   console.log("Parent capturing");
 }, true);
+// true enables capturing phase.
+// Clicking child logs:
+// Parent capturing
+// Child clicked
 
-// ðŸ‘‰ true enables capturing phase.
-
-// Event Delegation (ðŸ”¥ Very Important)
+// Event Delegation (Very Important)
 document.getElementById("list").addEventListener("click", (e) => {
   if (e.target.tagName === "LI") {
     console.log(e.target.textContent);
   }
 });
 
-// âœ… Handles dynamic elements
-// âœ… Improves performance
+// Handles dynamic elements
+// Improves performance
 
 // Prevent Default Behavior
 form.addEventListener("submit", (e) => {

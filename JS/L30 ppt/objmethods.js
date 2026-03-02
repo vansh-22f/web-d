@@ -26,7 +26,10 @@ let merged = { ...obj1, ...obj2 };
 console.log(merged);//{ a: 1, b: 2 }
 
 
-//Object Utility Methods
+//Object Utility Methods:
+// Object.keys() – Get Keys
+// Object.values() – Get Values
+// Object.entries() – Get Key-Value Pairs
 let data = { x: 10, y: 20 };
 
 console.log(Object.keys(data));//[ 'x', 'y' ]

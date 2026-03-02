@@ -13,10 +13,7 @@ function processUser(callback) {
   console.log(callback("Vansh"));
 }
 
-processUser(greet);
-
-// Output
-// Hello Vansh
+processUser(greet);// Hello Vansh
 
 // Function Returning Another Function
 function multiplier(factor) {
@@ -67,22 +64,19 @@ console.log(double(5));//10
 
 // Runs only once
 
-// Basic IIFE Syntax
+// Basic IIFE
 (function () {
   console.log("IIFE executed");
-})();
+})();// IIFE executed
 
-// Output
 
-// IIFE executed
 // IIFE with Parameters
 (function (name) {
   console.log("Hello " + name);
-})("Vansh");
+})("Vansh");// Hello Vansh
 
-// Output
 
-// Hello Vansh
+
 // Arrow Function IIFE
 (() => {
   console.log("Arrow IIFE");

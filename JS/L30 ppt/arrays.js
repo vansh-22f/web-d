@@ -32,29 +32,21 @@ console.log(mixed);// [1, "JS", true, null, { lang: "JavaScript" }]
 
 // push() – Add at End
 let arr5 = [1, 2, 3];
-
 arr5.push(4);
 console.log(arr5);//[1, 2, 3, 4]
-
-
-
 // pop() – Remove from End
 let arr1 = [1, 2, 3];
-
 arr1.pop();
 console.log(arr1);   //[1, 2]
 
 
 // unshift() – Add at Beginning
 let arr2 = [2, 3];
-
 arr2.unshift(1);
 console.log(arr2);//[1, 2, 3]
 
-
 // shift() – Remove from Beginning
 let arr3 = [1, 2, 3];
-
 arr3.shift();
 console.log(arr3);   // [2, 3]
 
@@ -74,17 +66,18 @@ let part = arr6.slice(1, 4);
 console.log(part);//20, 30, 40
 console.log(arr6);//10, 20, 30, 40, 50
 
-
 // splice() – Modifies Original Array
 let arr7 = [10, 20, 30, 40];
-
 arr7.splice(1, 2);// start at index 1, remove 2 elements
-
 console.log(arr7);//[10, 40]
 
-//concat() – Combine Arrays
+
+
+//concat() 
+//– Combine Arrays
 let a = [1, 2];
 let b = [3, 4];
 
 let result = a.concat(b);
-console.log(result); //[1, 2, 3, 4]
+console.log(result); 
+//[1, 2, 3, 4]

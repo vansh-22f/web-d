@@ -3,9 +3,24 @@
 //returns a single promise that resolves when all of the promises in the array have resolved,
 //or rejects if any of the promises in the array reject.
 
-Promise.all([p1,p2,p3])
+// Promise.all([p1,p2,p3])
 // waits for all of them if all resolve but
 // if any one of them reject it will reject right away and ignore the rest of the promises in the array.
+Promise.all([p1, p2, p3])
+  .then(res => console.log(res))
+  .catch(err => console.log(err));
+[data1, data2, data3]//if resolved after 3s
+errorFromP2//if any one rejects 
+// eg p2 rejects after 1s 
+
+
+Promise.allSettled([p1, p2, p3])
+  .then(res => console.log(res));
+[
+  { status: "fulfilled", value: data1 },
+  { status: "rejected", reason: error2 },
+  { status: "fulfilled", value: data3 }
+]  
 
 // Case1
 // IF :::: p1-> 3s ,p2->1s ,p3->2s
@@ -35,7 +50,8 @@ Promise.all([p1,p2,p3])
 
 
 // 2.
-Promise.allSettled([p1,p2,p3])
+// Promise.allSettled([p1,p2,p3])
+
 // even if one promise rejects, 
 // Promise.allSettled will wait for all promises to settle (either resolve or reject) 
 // and then return an array of objects indicating the status and value/reason of each promise.
@@ -66,6 +82,21 @@ Promise.allSettled([p1,p2,p3])
 
 // 3.
 Promise.race([p1,p2,p3])
+Promise.race([p1, p2, p3])
+  .then(res => console.log(res))
+  .catch(err => console.log(err));
+//Output:  
+// p2 resolves in 1s → returns data2
+// p3 rejects in 2s → returns error3  
+
+Promise.any([p1, p2, p3])
+  .then(res => console.log(res))
+  .catch(err => console.log(err));
+
+// First success wins
+// Rejections are ignored until all fail
+// If all fail → AggregateError  
+
 // the person who finishes first wins 
 // and race will give you result of fisrt whether is rejected or resolved Promise
 

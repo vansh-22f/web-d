@@ -15,23 +15,13 @@
 function greet() {
   console.log("Hello, JavaScript!");
 }
-
-greet();
-
-// Output
-// Hello, JavaScript!
-
+greet();// Hello, JavaScript!
 
 // Function with Parameters
 function add(a, b) {
   return a + b;
 }
-
-console.log(add(2, 3));
-
-// Output
-// 5
-
+console.log(add(2, 3));//5
 
 
 // Parameters vs Arguments
@@ -72,8 +62,12 @@ greet();
 // A function without a name, often used as a value.
 
 setTimeout(function () {
-  console.log("Executed after 1 second");
+  console.log(
+    "Executed after 1 second"
+  );
 }, 1000);
+
+
 // Arrow Function (ES6)
 
 // Shorter syntax and cleaner code.

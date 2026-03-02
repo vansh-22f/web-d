@@ -21,16 +21,18 @@ function outer() {
     return count;
   }
   inner()   
-  //Why this works ?
-    // inner keeps reference to count
-    // Scope is preserved in memory
+  
 }
 
 const counter = outer();
 counter(); // 1
 counter(); // 2
 
+//Why this works ?
+    // inner keeps reference to count
+    // Scope is preserved in memory
 
+    
 // Hoisting & TDZ
 console.log(a); // undefined
 var a = 10;

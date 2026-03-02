@@ -20,7 +20,6 @@ console.log(word); // HELLO
 
 ////////
 let text = "JavaScript";
-
 console.log(text.toUpperCase()); //JAVASCRIPT
 console.log(text.toLowerCase()); //javascript
 
@@ -30,8 +29,11 @@ console.log(str.slice(0, 8));       // Frontend
 console.log(str.substring(9, 17));  // Developer
 
 
+
+
 let msg = "I love Java";
-console.log(msg.replace("Java", "JavaScript")); // I love JavaScript
+console.log(msg.replace("Java", "JavaScript")); 
+// I love JavaScript
 
 
 let sentence = "Learn JavaScript Fast";
