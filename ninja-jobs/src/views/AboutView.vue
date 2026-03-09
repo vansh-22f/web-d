@@ -1,0 +1,11 @@
+<template>
+  <div class="about">
+    <h1>This is an about page</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sunt quam dolorem dolor vero! Doloribus dolores saepe dolor cumque tenetur, reiciendis veniam! Vitae eaque esse vero quasi quos repellat voluptates eligendi error. Voluptates blanditiis distinctio mollitia expedita eum porro saepe possimus quod officiis magni. Molestiae amet est dolorum consequuntur. Blanditiis, dicta sint? Eius eligendi odio qui voluptatum aperiam ipsam ad obcaecati numquam vitae molestias sit ullam quasi consequatur architecto sed, quos ab sapiente delectus quisquam suscipit ipsa dolorum. Nam voluptate quaerat magni ullam nostrum aliquam, veritatis necessitatibus rerum perspiciatis inventore quo praesentium quia similique minus ea omnis repellendus eos explicabo!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, dicta nihil laborum officiis magnam doloribus enim provident dolorem in, earum iste quo quasi unde et deserunt! Dolorem, maiores architecto, nostrum soluta delectus dolore repellat recusandae nemo cum id consequatur? Sunt excepturi quasi provident maiores repellat laborum odit cum? Expedita consequatur eius doloribus dolores cupiditate vero alias, velit, ab sint quo eaque omnis. Deserunt repellendus nihil laboriosam laborum quaerat, temporibus officia quasi rem est nobis nesciunt, necessitatibus consectetur provident error. Reiciendis voluptatum amet aliquam iure nesciunt, voluptate distinctio quisquam incidunt vero cumque, sequi omnis. Doloremque reprehenderit ipsum quam, provident, fugit iure incidunt tempore aperiam tempora, quasi recusandae! Incidunt harum deleniti eaque, magnam earum blanditiis eum provident soluta nulla consectetur culpa debitis atque impedit quae a quasi at quia, officia maxime omnis saepe doloribus repellendus corporis. Pariatur necessitatibus in modi officia consequuntur, obcaecati ratione reprehenderit aperiam rem molestiae consequatur? Suscipit, cum aspernatur!</p>
+  </div>
+</template>
+<style scoped>
+
+
+</style>

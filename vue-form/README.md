@@ -1,4 +1,4 @@
-# manual-project
+# vue-form
 
 ## Project setup
 ```
