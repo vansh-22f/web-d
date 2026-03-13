@@ -26,7 +26,7 @@ export function useProducts() {
 
     return result;
   });
-
+// hi
   return {
     search,
     sortType,
