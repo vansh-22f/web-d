@@ -1,18 +1,22 @@
 <template>
-
-  <h1>Products</h1>
+  <div class="grid grid-cols-4 gap-5">
+    <div v-for="p in products" :key="p.id">
+      <NuxtLink :to="`/products/${p.id}`">{{ p.title }}</NuxtLink>
+    </div>
+  </div>
 </template>
 
-<script>
-
+<script setup>
 definePageMeta({
-  layout:'products' ,
-})
+  layout: "products",
+});
+
+// Fetch the prodcuts and pass it to the layout
+const { data: products } = await useFetch("https://fakestoreapi.com/products");
 </script>
 
 <style scoped>
-h1{
-    color:red;
+h1 {
+  color: red;
 }
-
 </style>
