@@ -1,9 +1,7 @@
 <template>
   <div class="grid grid-cols-4 gap-5">
     <div v-for="p in products" :key="p.id">
-      <ProductCard :product="p">
-        
-      </ProductCard>
+      <ProductCard :product="p"> </ProductCard>
     </div>
   </div>
 </template>
@@ -11,6 +9,10 @@
 <script setup>
 definePageMeta({
   layout: "products",
+  pageTransition: {
+    name: "rotate",
+    mode: "out-in",
+  },
 });
 
 // Fetch the prodcuts and pass it to the layout
