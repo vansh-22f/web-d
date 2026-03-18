@@ -26,8 +26,10 @@ shorthand for v-on is @ so instead of writing v-on:click we can write @
 
 
 nuxt
-
+<!-- 
 1.styling
 2. seo and meta
-3.transitions
+3.transitions -->
+
+1.data fetching
 

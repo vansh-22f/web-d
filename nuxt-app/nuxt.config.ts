@@ -6,5 +6,5 @@ export default defineNuxtConfig({
   },
   // do LayoutTransition instead of page one for layout transition
   devtools: { enabled: false },
-  modules:['@nuxtjs/tailwindcss']
+  modules:['@nuxtjs/tailwindcss', '@pinia/nuxt']
 })
